@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 Amlogic, Inc.
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350.0dp"
+    android:layout_height="400.0dp">
+
+    <LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<TextView
+	    android:id="@+id/width"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/width" />
+        <EditText
+	    android:id="@+id/edit_width"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="number">
+	    <requestFocus />
+	</EditText>
+
+	<TextView android:layout_marginLeft="30dp"
+	    android:id="@+id/height"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/height" />
+        <EditText
+	    android:id="@+id/edit_height"
+    	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<TextView
+	    android:id="@+id/framerate"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/framerate" />
+        <EditText
+	    android:id="@+id/edit_framerate"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="number"/>
+
+	<TextView android:layout_marginLeft="30dp"
+	    android:id="@+id/bitrate"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/bitrate" />
+        <EditText
+	    android:id="@+id/edit_bitrate"
+    	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="number" />
+        <TextView
+	    android:id="@+id/bitrate_m"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="M" />
+    </LinearLayout>
+
+    <LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+	<TextView
+	    android:id="@+id/limittime"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/limittime" />
+        <EditText
+	    android:id="@+id/edit_limittime"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="number"/>
+        <TextView
+	    android:id="@+id/limittime_s"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="s" />
+
+	<TextView android:layout_marginLeft="30dp"
+	    android:id="@+id/sourcetype"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:text="@string/sourcetype" />
+        <EditText
+	    android:id="@+id/edit_sourcetype"
+    	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="number" />
+    </LinearLayout>
+
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cb_isCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/isCrop"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/recordType"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/recordType" />
+        <Spinner
+            android:id="@+id/spn_recordtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/recordType" />
+    </LinearLayout>
+
+	 <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/left" />
+        <EditText
+            android:id="@+id/edit_left"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number">
+        <requestFocus />
+        </EditText>
+
+        <TextView android:layout_marginLeft="30dp"
+            android:id="@+id/top"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/top" />
+            <EditText
+            android:id="@+id/edit_top"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/right" />
+        <EditText
+            android:id="@+id/edit_right"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"/>
+
+        <TextView android:layout_marginLeft="30dp"
+            android:id="@+id/bottom"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom" />
+        <EditText
+            android:id="@+id/edit_bottom"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <TextView
+	    android:id="@+id/path"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"/>
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 Amlogic, Inc.
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400.0dp"
+    android:layout_height="550.0dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/left" />
+        <EditText
+            android:id="@+id/edit_left"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number">
+        <requestFocus />
+        </EditText>
+
+        <TextView android:layout_marginLeft="30dp"
+            android:id="@+id/top"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/top" />
+            <EditText
+            android:id="@+id/edit_top"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/right" />
+        <EditText
+            android:id="@+id/edit_right"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"/>
+
+        <TextView android:layout_marginLeft="30dp"
+            android:id="@+id/bottom"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom" />
+        <EditText
+            android:id="@+id/edit_bottom"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/width"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/width" />
+        <EditText
+            android:id="@+id/edit_width"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"/>
+
+        <TextView android:layout_marginLeft="30dp"
+            android:id="@+id/height"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/height" />
+        <EditText
+            android:id="@+id/edit_height"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/type" />
+<!--
+        <EditText
+            android:id="@+id/edit_type"
+            android:layout_width="80.0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"/>
+-->
+        <Spinner
+            android:id="@+id/spn_srctype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/sourceType" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cb_hideWindow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hidewindow"
+            android:checked="true"/>
+        <CheckBox
+            android:id="@+id/cb_ifBuffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/useIfBuffer"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/screencap"/>
+
+    <ImageView android:layout_marginTop="20dp"
+        android:id="@+id/imageview"
+        android:background="@drawable/bg"
+        android:layout_width="400.0dip"
+        android:layout_height="240.0dip" />
+
+</LinearLayout>
